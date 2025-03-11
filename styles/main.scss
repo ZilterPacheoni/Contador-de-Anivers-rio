@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c36;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px; /* Manter o limite de largura para telas grandes */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tempo {
+    background: #ffcc00;
+    color: #282c36;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #282c36;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Media Query para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        width: 100%; /* O container ocupa 100% da largura da tela */
+        max-width: none; /* Remove o limite máximo de largura */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .contador {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        gap: 10px;
+    }
+
+    .tempo {
+        font-size: 18px;
+        padding: 10px;
+        min-width: 60px;
+    }
+
+    .info-container {
+        flex-direction: column; /* Organiza as informações em uma coluna */
+        gap: 10px;
+    }
+
+    button {
+        width: 100%; /* O botão ocupa toda a largura da tela */
+        padding: 12px 0;
+    }
+}
